@@ -67,6 +67,12 @@ def preprocess_x(X):
 
     return X
 
+def preprocess_y(Y):
+    Y_train = np.array([float(Y.loc[66][1])])
+    Y_train = Y_train/100
+    return Y_train
+
+
 
 if __name__ == '__main__':
 
