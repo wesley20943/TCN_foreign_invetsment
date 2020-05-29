@@ -1,5 +1,5 @@
 # TCN_foreign_invetsment
-This TCN model are based on the repo from https://github.com/philipperemy/keras-tcn
+This TCN model are based on the repo from https://github.com/philipperemy/keras-tcn /n
 Our propose is to predict the percentage of the shareholding ratio of the foreign investors
 
 
