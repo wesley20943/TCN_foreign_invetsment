@@ -36,7 +36,11 @@ https://www.cbc.gov.tw/tw/mp-1.html <br/>
 https://finance.yahoo.com/quote/%5EVIX/history/ <br/>
 
 # Result
-Reach loss = 0.0173 in training dataset and loss = 0.0177 (MSE) in testing dataset. (MSE)  <br/> <br/>
+Reach loss = 0.0173 in training dataset and loss = 0.0177 in testing dataset. (MSE)  <br/> <br/>
 batch_size -> 50->100->200->200 <br/> <br/>
 epochs     -> 20->10->5->10 <br/> <br/>
 More detailed information can be seen in model.ipynb <br/> <br/>
+
+# TODO
+using other rescale methods, or even implementing PCA etc. dim reduction methods <br/><br/>
+to package all of the things up for conveniance in using <br/><br/>
