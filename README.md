@@ -44,3 +44,4 @@ More detailed information can be seen in model.ipynb <br/> <br/>
 # TODO
 using other rescale methods, or even implementing PCA etc. dim reduction methods <br/><br/>
 to package all of the things up for conveniance in using <br/><br/>
+Rescale y to rate of change
