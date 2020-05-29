@@ -62,16 +62,11 @@ def preprocess_x(X):
 
     ## for interest
     X_i = X.loc[[44]].iloc[:, 1:]
+    X_i = X_i.fillna(0)
 
     X = pd.concat([X_re,X_n,X_i],axis = 0)
 
     return X
-
-def preprocess_y(Y):
-    Y_train = np.array([float(Y.loc[66][1])])
-    Y_train = Y_train/100
-    return Y_train
-
 
 
 if __name__ == '__main__':

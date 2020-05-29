@@ -409,14 +409,14 @@ def compiled_tcn(num_feat,  # type: int
             y_pred_labels = K.cast(y_pred_labels, K.floatx())
             return K.cast(K.equal(y_true, y_pred_labels), K.floatx())
 
-        model.compile(get_opt(), loss='sparse_categorical_crossentropy', metrics=[accuracy])
+        model.compile(get_opt(), loss='sparse_categorical_crossentropy', metrics=['accuracy'])
     else:
         # regression
         x = Dense(output_len)(x)
-        x = Activation('linear')(x)
+        x = Activation('sigmoid')(x) ##change to sigmoid
         output_layer = x
         model = Model(input_layer, output_layer)
-        model.compile(get_opt(), loss='mean_squared_error')
+        model.compile(get_opt(), loss='mean_squared_error', metrics=['accuracy'])
     print('model.x = {}'.format(input_layer.shape))
     print('model.y = {}'.format(output_layer.shape))
     return model
