@@ -23,7 +23,7 @@ for total_issued variables, rescale by using median normaliztion ( x - median / 
 variables inculding: <br/> <br/>
 macro --> VIX, increase rate of domestic/government expenditure, capital construction, GDP, CPI........  <br/> <br/>
 micro --> Open, High, Max, Min, Close price, ratio of volume traded, put/call ratio of taiwan 50 index....... <br/> 
-(detailed can be viewed in variables.txt) <br/> <br/>
+(detailed can be viewed in variables_in_data.txt) <br/> <br/>
 
 77526 in total ,54268(60%) in training ,others in testing  <br/> <br/>
 
