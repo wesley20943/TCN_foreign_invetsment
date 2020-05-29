@@ -12,7 +12,7 @@ The hyper parameters are num_feat=28, nb_filters=24, kernel_size=8, dilations=[0
 each input with shape (1,28,15)  ==  (num of dataset, num of variables, num of days looking before) <br/>  <br/>
 eacg putput with shape (1,1)     ==  (num of dataset, next day shareholdings ratio of foreign invetors ) <br/> <br/>
 
-preprocess the data: <br/>
+preprocess the data: <br/> <br/>
 list_rescale = [1, 2, 3, 4, 5, 6, 32, 57, 58, 63, 67] by rescalinging each input's first date data as 1, others as 1+ incresed rate <br/> <br/>
 list_n_rescale = [13, 15, 17, 19, 21, 23, 26, 29, 31, 34, 35, 37, 39, 41, 43, 59, 62] do not rescale cause its already presented as inceased rate <br/> <br/>
 for total_issued variables, rescale by using median normaliztion ( x - median / MAD ) <br/> <br/>
@@ -22,7 +22,7 @@ for total_issued variables, rescale by using median normaliztion ( x - median / 
 # Data included
 variables inculding: <br/> <br/>
 macro --> VIX, increase rate of domestic/government expenditure, capital construction, GDP, CPI........  <br/> <br/>
-micro --> Open, High, Max, Min, Close price, ratio of volume traded, put/call ratio of taiwan 50 index....... <br/> <br/>
+micro --> Open, High, Max, Min, Close price, ratio of volume traded, put/call ratio of taiwan 50 index....... <br/> 
 (detailed can be viewed in variables.txt) <br/> <br/>
 
 77526 in total ,54268(60%) in training ,others in testing  <br/> <br/>
